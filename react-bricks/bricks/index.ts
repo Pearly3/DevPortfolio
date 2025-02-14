@@ -6,6 +6,8 @@ import Pokemon from './custom/Pokemon'
 import reactBricksUITheme from './react-bricks-ui'
 import Thumbnail from './custom/Thumbnail'
 
+import Dynamic from './custom/Dynamic'
+
 const bricks: types.Theme[] = [
   reactBricksUITheme, // React Bricks UI
   {
@@ -13,7 +15,7 @@ const bricks: types.Theme[] = [
     categories: [
       {
         categoryName: 'Custom bricks',
-        bricks: [HeroUnit, Pokemon, Thumbnail], // Custom Bricks
+        bricks: [HeroUnit, Pokemon, Thumbnail, Dynamic], // Custom Bricks
       },
     ],
   },
