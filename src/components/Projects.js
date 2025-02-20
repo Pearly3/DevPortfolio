@@ -1,38 +1,40 @@
-
+import { ProjectCard } from "./ProjectCard";
 import { Container, Col, Row, Nav, Tab } from "react-bootstrap";
+import projImg1 from "../assets/img/ZoroHeader.png"
+
 
 export const Projects = () => {
 
     const projects = [
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Project title 1",
+          description: "Description 1",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg2,
-        },
-        {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg3,
-        },
-        {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Project title2",
+          description: "Description 2",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg2,
+          title: "Project title 3",
+          description: "Description 3",
+          imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg3,
+          title: "Project title 4",
+          description: "Description 4",
+          imgUrl: projImg1,
+        },
+        {
+          title: "Project title 5",
+          description: "Description 5",
+          imgUrl: projImg1,
+        },
+        {
+          title: "Project title 6",
+          description: "Description 6",
+          imgUrl: projImg1,
         },
       ];
 
@@ -57,12 +59,15 @@ export const Projects = () => {
                     </Nav.Item>
                   </Nav>
                   <Tab.Content>
-                    <Tab.Pane eventkey="first">
+                    <Tab.Pane eventKey="first">
                         <Row>
                             {
                                 projects.map((project, index) => {
                                     return (
-                                        <p>{project.title}</p>
+                                        <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
                                     )
                                 })
                             }
