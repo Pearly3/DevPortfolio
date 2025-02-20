@@ -303,3 +303,73 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
+/*** Skills CSS ***/
+
+.skill {
+  padding: 50px 0;
+  position: relative;
+}
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 35px 0;
+}
+
+.skill-slider {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-slider .item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-slider .item img {
+  width: 40%;
+  margin: 0 auto 15px auto;
+}
+
+.skill-slider .item h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+  opacity: 0.4;
+}

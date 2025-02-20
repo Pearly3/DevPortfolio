@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import imgHeader from '../assets/img/ZoroHeader.png'
+// Zoro image Credit:
+// Source: WallpaperCave.com
+// URL: https://wallpapercave.com/w/wp13376809
+// Uploaded by: brentrivera6
 
 export const Banner = () => {
     const [text, setText] = useState('');
