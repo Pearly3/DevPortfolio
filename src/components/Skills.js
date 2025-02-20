@@ -1,8 +1,11 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
+import meter1 from "../assets/img/ProgrammingLang.png";
+// Image from: "Create a browser readable document using Github Actions Series 2: using Python"
+// Source: https://medium.com/@j622amilah/create-a-browser-readable-document-using-github-actions-series-2-using-python-d2ffd770f6b1
+import meter2 from "../assets/img/React-icon.png";
+// React logo (modified) - Copyright (c) Meta Platforms, Inc. and affiliates.
 import meter3 from "../assets/img/meter3.svg";
 
 
@@ -29,7 +32,7 @@ export const Skills = () => {
   const technicalSkills = [
     { title: "Languages", details: "Python, JavaScript, TypeScript, Swift, HTML, CSS", icon: meter1 },
     { title: "Frameworks", details: "React, React Native, Bootstrap, Node.js, Django, Flask", icon: meter2 },
-    { title: "Cloud & Tools", details: "Git, Firebase, GCP, SQL, NodeJS", icon: meter3 },
+    { title: "Cloud & Tools", details: "Git, Firebase, GCP, SQL, NodeJS, Docker", icon: meter3 },
     { title: "Development", details: "TDD, OOP, Agile, CI-CD", icon: meter1 }
   ];
 
