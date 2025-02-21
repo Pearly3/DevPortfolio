@@ -15,6 +15,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [numLoop, setNumLoop] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [startTyping, setStartTyping] = useState(false);
     const wordRotate = ["Full-Stack Developer", "Data Engineer", "Cloud Engineer" ];
     const period = 2000;
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -34,7 +35,7 @@ export const Banner = () => {
         
         setText(updatedText);
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
+            setDelta(30); 
         }
 
         if (!isDeleting && updatedText === fullText) {
@@ -50,25 +51,33 @@ export const Banner = () => {
         <section className = "banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    
+
                    <Col xs={12} md={6} xl={7}>
                       <TrackVisibility>
                       {({isVisible}) =>
-                         <div className={isVisible ? "animated__animated animate__fadeIn": ""}>
-                           <span className="tagline">Welcome to my Portfolio</span>
-                           <h1>{'Hi I\'m Ben Pearl '}<span className="wrap">{text}</span></h1>
-                           <p> I am an ambitious, flexible, and personable graduate with a highly analytical mindset. Committed to continuous learning through a passion for technology and software by expanding knowledge of relevant technologies and their subsequent applications. A natural team player, able to drive efficiency by focusing on strategies which achieve results. My experience with sales and outreach has sharpened my already strong communication and collaboration skills and combined with my eagerness to learn and exceptional problem solving skills, I am confident and excited to contribute to an ambitious technology team. I recently completed the Makers software development bootcamp which allowed me to sharpen my ability as a software developer.</p>
-                           <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
+                         <div>
+                           <span className={isVisible ? "tagline animate__animated animate__fadeIn" : "opacity-0"}>Welcome to my Portfolio</span>
+                           <h1 className={isVisible ? "custom-slide-in animate__animated animate__delay-1s" : "opacity-0"}>{'Hi I\'m Ben Pearl '}<span className="wrap">{text}</span></h1>
+                           <p className={isVisible ? "animate__animated animate__fadeIn animate__delay-2s" : "opacity-0"}> I am an ambitious, flexible, and personable graduate with a highly analytical mindset. Committed to continuous learning through a passion for technology and software by expanding knowledge of relevant technologies and their subsequent applications. A natural team player, able to drive efficiency by focusing on strategies which achieve results. My experience with sales and outreach has sharpened my already strong communication and collaboration skills and combined with my eagerness to learn and exceptional problem solving skills, I am confident and excited to contribute to an ambitious technology team. I recently completed the Makers software development bootcamp which allowed me to sharpen my ability as a software developer.</p>
+                           <button className={isVisible ? "animate__animated animate__fadeIn animate__delay-3s" : "opacity-0"} onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
                          </div>}
                       </TrackVisibility>
                    </Col>
-                   <Col xs={12} md ={6} xl={5}> 
-                     <img src={imgHeader} alt="Header Img" />
+                   <Col xs={12} md ={6} xl={5}>
+                     <TrackVisibility>
+                       {({isVisible}) =>
+                         <div className={isVisible ? "animate__animated animate__fadeIn animate__delay-3s" : "opacity-0"}>
+                           <img src={imgHeader} alt="Header Img" />
+                         </div>
+                       }
+                     </TrackVisibility>
                    </Col>
                 </Row>
             </Container>
         </section>
 
     )
+
+}
     
-    }
+    

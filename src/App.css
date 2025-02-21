@@ -277,6 +277,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
+@keyframes customSlideInLeft {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.custom-slide-in {
+  animation: customSlideInLeft 1s ease-out forwards;
+}
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
