@@ -49,11 +49,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={Nav1} alt="" /></a>
-                <a href="#"><img src={Nav2} alt="" /></a>
-                <a href="#"><img src={Nav3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/benjpearl" target="_blank" rel="noopener noreferrer"><img src={Nav1} alt="" /></a>
+                <a href="https://github.com/Pearly3" target="_blank" rel="noopener noreferrer"><img src={Nav2} alt="" /></a>
+                <a href="https://www.instagram.com/_ben_pearl/" target="_blank" rel="noopener noreferrer"><img src={Nav3} alt="" /></a>
               </div>
-              <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+              <button className="vvd" onClick={() => {onUpdateActiveLink('connect'); document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}}><span>Let's Connect</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
