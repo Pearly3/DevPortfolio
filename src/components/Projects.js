@@ -1,20 +1,23 @@
 import { ProjectCard } from "./ProjectCard";
 import { Container, Col, Row, Nav, Tab } from "react-bootstrap";
 import projImg1 from "../assets/img/ZoroHeader.png"
+import testImg from "../assets/img/FuryRoam2.png"
+import img2 from "../assets/img/PearlyFitness2.jpg"
 
 
 export const Projects = () => {
 
     const projects = [
         {
-          title: "Project title 1",
-          description: "Description 1",
-          imgUrl: projImg1,
+          title: "FuryRoam",
+          description: "A React-based travel recommendation application featuring interactive user questionnaires and dynamic data visualisation. Built with a modern tech stack including React components for the frontend UI, REST API integrations for real-time travel data, and an interactive 3D globe visualization. The application implements custom hooks for state management and API communication, delivering personalized travel recommendations based on user preferences. Tech Stack: React.js, JavaScript (ES6+), Node.js, Python/Flask Backend, HTML5, CSS3, Three.js, RESTful APIs. (Note: Application is hosted on a free-tier service - initial load may take ~5 minutes for the server to spin up). \nClick this box to view or visit at: https://travel-recommendation-ocw2.onrender.com/",
+          imgUrl: testImg,
+          projectUrl: "https://travel-recommendation-ocw2.onrender.com/"
         },
         {
-          title: "Project title2",
-          description: "Description 2",
-          imgUrl: projImg1,
+          title: "Pearly Fitness",
+          description: "A comprehensive fitness tracking application developed to gain hands-on experience with cloud databases through Google Cloud Platform (GCP) and data analytics algorithms. Built with a focus on understanding real-world database interactions in deployed applications, this project combines cloud technology expertise with personal fitness passion. Features include workout logging, progress tracking, and data-driven insights using polynomial regression for analyzing training patterns. The application leverages Firestore for real-time data storage and retrieval, enabling personal fitness goal tracking and performance analytics. Tech Stack: React.js, Firebase/Firestore, GCP, JavaScript, Data Analytics Algorithms.",
+          imgUrl: img2,
         },
         {
           title: "Project title 3",
@@ -45,7 +48,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p>Placeholder text</p>
+                    <p></p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                     <Nav.Item>
@@ -73,8 +76,8 @@ export const Projects = () => {
                             }
                         </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">Placeholder</Tab.Pane>
-                    <Tab.Pane eventKey="third">Placeholder</Tab.Pane>
+                    <Tab.Pane eventKey="second">Coming soon!</Tab.Pane>
+                    <Tab.Pane eventKey="third">Coming soon!</Tab.Pane>
                   </Tab.Content>
                   </Tab.Container>
                     </Col>
