@@ -17,22 +17,23 @@ export const Projects = () => {
         },
         {
           title: "Pearly Fitness",
-          description: "A comprehensive fitness tracking application developed to gain hands-on experience with cloud databases through Google Cloud Platform (GCP) and data analytics algorithms. Built with a focus on understanding real-world database interactions in deployed applications, this project combines cloud technology expertise with personal fitness passion. Features include workout logging, progress tracking, and data-driven insights using polynomial regression for analyzing training patterns. The application leverages Firestore for real-time data storage and retrieval, enabling personal fitness goal tracking and performance analytics. Tech Stack: React.js, Firebase/Firestore, GCP, JavaScript, Data Analytics Algorithms.",
+          description: "A comprehensive fitness tracking application developed built to gain hands-on experience with cloud databases through Google Cloud Platform (GCP) and data analytics algorithms. A significant area of focus for this project was on understanding real-world database interactions in deployed applications, this project combines cloud technology expertise with personal fitness passion. Features include workout logging, progress tracking, and data-driven insights using polynomial regression for analysing training patterns. The application leverages Firestore for real-time data storage and retrieval, enabling personal fitness goal tracking and performance analytics. Tech Stack: React.js, Firebase/Firestore, GCP, JavaScript, Data Analytics Algorithms. Deployment imminent come back soon if you want to check it out!",
           imgUrl: img2,
         },
         {
           title: "Uplist",
-          description: "Description 3",
+          description: "Contributed to the development of Uplist, a platform connecting emerging artists with event opportunities. Built with React for the frontend and Flask/Azure backend, the platform enables artists to showcase their services and get booked for various events from house parties to club performances. Worked in agile teams, collaborating with other developers to successfully deploy and maintain the live platform. Tech Stack: React.js, Flask, Microsoft Azure, RESTful APIs. Click this box to visit Uplist.uk",
           imgUrl: img3,
+          projectUrl: "https://Uplist.uk"
         },
         {
-          title: "Project title 4",
-          description: "Description 4",
+          title: "AceBook",
+          description: "A collaborative project from Makers bootcamp implementing core Facebook features using JavaScript, Python, Flask, HTML, and CSS. Features include user authentication with sessions/tokens, post creation, likes tracking, and comment functionality. Repository: github.com/jason-sayeed (repository currently private but if you have any questions feel free to reach out!)",
           imgUrl: projImg1,
         },
         {
-          title: "Project title 5",
-          description: "Description 5",
+          title: "MakersBNB",
+          description: "This was a group project, completed during my time at makers bootcamp, that simulates the Airbnb website. It deals with databases and allows users to post and book properties for set time periods. Tech Stack: JavaScript, Python, Flask, HTML, CSS. The repository is located at: https://github.com/katrinamichanicou (repository currently private but if you have any questions feel free to reach out!)",
           imgUrl: projImg1,
         },
         {

@@ -509,12 +509,13 @@ Created by: kjpargeter
   padding: 20px;
 }
 
+
 .proj-imgbx.project-3 img {
   object-fit: contain;
-  -webkit-filter: invert(100%); 
-  filter: invert(100%);
-  background-color: transparent;
+  
 }
+
+
 
 .proj-imgbx::before {
   content: "";
