@@ -28,6 +28,12 @@ export const Banner = () => {
         return () => {clearInterval(ticker)}
     }, [text])
 
+    const onUpdateActiveLink = (value) => {
+      setActiveLink(value);
+    }
+
+    const [activeLink, setActiveLink] = useState('home');
+
     const tick = () => {
         let i = numLoop % wordRotate.length;
         let fullText = wordRotate[i];
@@ -48,33 +54,25 @@ export const Banner = () => {
         }
     }
     return (
-        <section className = "banner" id="home">
-            <Container>
-                <Row className="align-items-center">
-
-                   <Col xs={12} md={6} xl={7}>
-                      <TrackVisibility>
-                      {({isVisible}) =>
-                         <div>
-                           <span className={isVisible ? "tagline animate__animated animate__fadeIn" : "opacity-0"}>Welcome to my Portfolio</span>
-                           <h1 className={isVisible ? "custom-slide-in animate__animated animate__delay-1s" : "opacity-0"}>{'Hi I\'m Ben Pearl '}<span className="wrap">{text}</span></h1>
-                           <p className={isVisible ? "animate__animated animate__fadeIn animate__delay-2s" : "opacity-0"}> I am an ambitious, flexible, and personable graduate with a highly analytical mindset. Committed to continuous learning through a passion for technology and software by expanding knowledge of relevant technologies and their subsequent applications. A natural team player, able to drive efficiency by focusing on strategies which achieve results. My experience with sales and outreach has sharpened my already strong communication and collaboration skills and combined with my eagerness to learn and exceptional problem solving skills, I am confident and excited to contribute to an ambitious technology team. I recently completed the Makers software development bootcamp which allowed me to sharpen my ability as a software developer.</p>
-                           <button className={isVisible ? "animate__animated animate__fadeIn animate__delay-3s" : "opacity-0"} onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
-                         </div>}
-                      </TrackVisibility>
-                   </Col>
-                   <Col xs={12} md ={6} xl={5}>
-                     <TrackVisibility>
-                       {({isVisible}) =>
-                         <div className={isVisible ? "animate__animated animate__fadeIn animate__delay-3s" : "opacity-0"}>
-                           <img src={imgHeader} alt="Header Img" />
-                         </div>
-                       }
-                     </TrackVisibility>
-                   </Col>
-                </Row>
-            </Container>
-        </section>
+      <section className="banner" id="home">
+      <Container>
+          <Row className="align-items-center">
+             <Col xs={12} md={6} xl={7}>
+               <div>
+                 <span className="tagline animate__animated animate__fadeIn">Welcome to my Portfolio</span>
+                 <h1 className="custom-slide-in animate__animated animate__delay-1s">{'Hi I\'m Ben Pearl '}<span className="wrap">{text}</span></h1>
+                 <p className="animate__animated animate__fadeIn animate__delay-2s">I am an ambitious, flexible, and personable graduate with a highly analytical mindset. Committed to continuous learning through a passion for technology and software by expanding knowledge of relevant technologies and their subsequent applications. A natural team player, able to drive efficiency by focusing on strategies which achieve results. My experience with sales and outreach has sharpened my already strong communication and collaboration skills and combined with my eagerness to learn and exceptional problem solving skills, I am confident and excited to contribute to an ambitious technology team. I recently completed the Makers software development bootcamp which allowed me to sharpen my ability as a software developer.</p>
+                 <button className="animate__animated animate__fadeIn animate__delay-3s" onClick={() => {onUpdateActiveLink('connect'); document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}}>Let's Connect<ArrowRightCircle size={25}/></button>
+               </div>
+             </Col>
+             <Col xs={12} md={6} xl={5}>
+               <div className="animate__animated animate__fadeIn animate__delay-3s">
+                 <img src={imgHeader} alt="Header Img" />
+               </div>
+             </Col>
+          </Row>
+      </Container>
+  </section>
 
     )
 
