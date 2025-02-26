@@ -501,12 +501,19 @@ Created by: kjpargeter
 /* Project-specific styles */
 .proj-imgbx.project-1 img {
   object-fit: contain;
-  object-position: top;
+  
 }
 
 .proj-imgbx.project-2 img {
   object-fit: contain;
   padding: 20px;
+}
+
+.proj-imgbx.project-3 img {
+  object-fit: contain;
+  -webkit-filter: invert(100%); 
+  filter: invert(100%);
+  background-color: transparent;
 }
 
 .proj-imgbx::before {

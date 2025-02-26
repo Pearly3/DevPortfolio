@@ -3,6 +3,7 @@ import { Container, Col, Row, Nav, Tab } from "react-bootstrap";
 import projImg1 from "../assets/img/ZoroHeader.png"
 import testImg from "../assets/img/FuryRoam2.png"
 import img2 from "../assets/img/PearlyFitness2.jpg"
+import img3 from "../assets/img/Uplist.png"
 
 
 export const Projects = () => {
@@ -20,9 +21,9 @@ export const Projects = () => {
           imgUrl: img2,
         },
         {
-          title: "Project title 3",
+          title: "Uplist",
           description: "Description 3",
-          imgUrl: projImg1,
+          imgUrl: img3,
         },
         {
           title: "Project title 4",
@@ -70,6 +71,7 @@ export const Projects = () => {
                                         <ProjectCard
                                         key={index}
                                         {...project}
+                                        index={index}
                                         />
                                     )
                                 })
