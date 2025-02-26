@@ -22,8 +22,9 @@ export const Projects = () => {
         },
         {
           title: "Uplist",
-          description: "Description 3",
+          description: "Contributed to the development of Uplist, a platform connecting emerging artists with event opportunities. Built with React for the frontend and Flask/Azure backend, the platform enables artists to showcase their services and get booked for various events from house parties to club performances. Worked in agile teams, collaborating with other developers to successfully deploy and maintain the live platform. Tech Stack: React.js, Flask, Microsoft Azure, RESTful APIs. Click this box to visit Uplist.uk",
           imgUrl: img3,
+          projectUrl: "https://Uplist.uk"
         },
         {
           title: "Project title 4",
