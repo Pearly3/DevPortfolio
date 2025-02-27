@@ -564,6 +564,20 @@ Created by: kjpargeter
 }
 .contact img {
   width: 92%;
+  animation: smoothSemiCircle 5s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes smoothSemiCircle {
+  0% {
+    transform: rotate(-10deg) translateX(-40px) translateY(0);
+  }
+  50% {
+    transform: rotate(10deg) translateX(40px) translateY(0);
+  }
+  100% {
+    transform: rotate(-10deg) translateX(-40px) translateY(0);
+  }
 }
 .contact h2 {
 	font-size: 45px;
