@@ -3,13 +3,19 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+const path = require("path");
 
 // server used to send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.use(express.static(path.join(__dirname, "build")));
+
+// API routes
+app.use("/api", router);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, "0.0.0.0", () => console.log(`Server Running on port ${PORT}`));
 
 const contactEmail = nodemailer.createTransport({
   host: "mail.btinternet.com",
