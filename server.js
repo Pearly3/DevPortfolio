@@ -1,6 +1,6 @@
+
 require('dotenv').config();
 const express = require("express");
-const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
@@ -31,7 +31,8 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+// Define the contact route directly on app instead of using router
+app.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
