@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/ZoroHeader.png"
 import testImg from "../assets/img/FuryRoam2.png"
 import img2 from "../assets/img/PearlyFitness2.jpg"
 import img3 from "../assets/img/Uplist.png"
+import img4 from "../assets/img/MakersBNB.png"
 
 
 export const Projects = () => {
@@ -34,7 +35,7 @@ export const Projects = () => {
         {
           title: "MakersBNB",
           description: "This was a group project, completed during my time at makers bootcamp, that simulates the Airbnb website. It deals with databases and allows users to post and book properties for set time periods. Tech Stack: JavaScript, Python, Flask, HTML, CSS. The repository is located at: https://github.com/katrinamichanicou (repository currently private but if you have any questions feel free to reach out!)",
-          imgUrl: projImg1,
+          imgUrl: img4,
         },
         {
           title: "Project title 6",
