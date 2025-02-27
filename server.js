@@ -10,19 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API routes
-app.use("/", router);
-
 // Serve static files from the React build folder
-app.use(express.static(path.join(__dirname, "build")));
-
-// All remaining requests return the React app
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, "0.0.0.0", () => console.log(`Server Running on port ${PORT}`));
+app.use(express.static(path.join(__dirname, "build")))
 
 const contactEmail = nodemailer.createTransport({
   host: "mail.btinternet.com",
@@ -58,9 +47,19 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json(error);
+      console.log("Email error:", error);
+      res.json({ code: 500, status: "Error", error: error.message });
     } else {
       res.json({ code: 200, status: "Message Sent" });
     }
   });
 });
+
+// All remaining requests return the React app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+// Use environment port if available or default to 5000
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
