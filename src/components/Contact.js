@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/ZoroHeader.png";
+import contactImg from "../assets/img/Luffy.png"
+// Luffy Image credit
+// Source Pintrest.com
+// URL: https://www.pinterest.com/pin/219972763044309001/
+// Created by Sticker Deco
+
 
 export const Contact = () => {
     const formInitialDetails = {
