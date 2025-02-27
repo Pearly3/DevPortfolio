@@ -9,12 +9,19 @@ const path = require("path");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "build")));
 
 // API routes
-app.use("/api", router);
+app.use("/", router);
 
-const PORT = process.env.PORT || 3000;
+// Serve static files from the React build folder
+app.use(express.static(path.join(__dirname, "build")));
+
+// All remaining requests return the React app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () => console.log(`Server Running on port ${PORT}`));
 
 const contactEmail = nodemailer.createTransport({
