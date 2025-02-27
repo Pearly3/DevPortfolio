@@ -7,6 +7,7 @@ import img3 from "../assets/img/Uplist.png"
 import img4 from "../assets/img/Makers.png"
 // Source Makers.tech
 import img5 from "../assets/img/MakersBNB.png"
+import comingSoonImg from "../assets/img/ComingSoonD.png"
 
 
 
@@ -41,9 +42,9 @@ export const Projects = () => {
           imgUrl: img5,
         },
         {
-          title: "Project title 6",
-          description: "Description 6",
-          imgUrl: projImg1,
+          title: "Stay Tuned!",
+      
+          imgUrl: comingSoonImg,
         },
       ];
 
