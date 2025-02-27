@@ -16,7 +16,10 @@ export const Banner = () => {
     const [numLoop, setNumLoop] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [startTyping, setStartTyping] = useState(false);
-    const wordRotate = ["Full-Stack Developer", "Data Engineer", "Passionate Coder, Tech Lover" ];
+    const wordRotate = ["Full-Stack Developer", "Data Engineer", "JavaScript Enthusiast",
+  "React Developer",
+  "Python Coder",
+  "Problem Solver" ];
     const period = 2000;
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     
