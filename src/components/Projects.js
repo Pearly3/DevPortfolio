@@ -7,7 +7,7 @@ import img3 from "../assets/img/Uplist.png"
 import img4 from "../assets/img/Makers.png"
 // Source Makers.tech
 import img5 from "../assets/img/MakersBNB.png"
-import comingSoonImg from "../assets/img/ComingSoonD.png"
+import img6 from "../assets/img/amc.jpg"
 
 
 
@@ -22,7 +22,7 @@ export const Projects = () => {
         },
         {
           title: "Pearly Fitness",
-          description: "A comprehensive fitness tracking application developed built to gain hands-on experience with cloud databases through Google Cloud Platform (GCP) and data analytics algorithms. A significant area of focus for this project was on understanding real-world database interactions in deployed applications, this project combines cloud technology expertise with personal fitness passion. Features include workout logging, progress tracking, and data-driven insights using polynomial regression for analysing training patterns. The application leverages Firestore for real-time data storage and retrieval, enabling personal fitness goal tracking and performance analytics. Tech Stack: React.js, Firebase/Firestore, GCP, JavaScript, Data Analytics Algorithms. Deployment imminent come back soon if you want to check it out!",
+          description: "A comprehensive fitness tracking application developed built to gain hands-on experience with cloud databases through Google Cloud Platform (GCP) and data analytics algorithms. A significant area of focus for this project was on understanding real-world database interactions in deployed applications, this project combines cloud technology expertise with personal fitness passion. Features include workout logging, progress tracking, and data-driven insights using polynomial regression for analysing training patterns. The application leverages Firestore for real-time data storage and retrieval, enabling personal fitness goal tracking and performance analytics. Furthermore implementation of an ETL script, using Kaggle to get the dataset, pandas to clean the data and snowflake to load and store it. Tech Stack: React.js, Firebase/Firestore, GCP, JavaScript, Snowflake, Data Analytics Algorithms. Deployment imminent come back soon if you want to check it out!",
           imgUrl: img2,
         },
         {
@@ -42,9 +42,11 @@ export const Projects = () => {
           imgUrl: img5,
         },
         {
-          title: "Stay Tuned!",
+          title: "AMC ETL script template",
+          description: "This was a very small project which has the purpose of extracting data from the Amazon Marketing Cloud, clean the data with Pandas and loading the cleaned data using Snowflake. Project was for educational purposes, code visible at: https://github.com/Pearly3/AMC-ETL-SCRIPT (click this box)",
       
-          imgUrl: comingSoonImg,
+          imgUrl: img6,
+          projectUrl: "https://github.com/Pearly3/AMC-ETL-SCRIPT",
         },
       ];
 
