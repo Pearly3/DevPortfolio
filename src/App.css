@@ -340,7 +340,6 @@ Created by: kjpargeter
 }
 
 /*** Skills CSS ***/
-
 .skill {
   padding: 50px 0;
   position: relative;
@@ -410,6 +409,24 @@ Created by: kjpargeter
   z-index: -4;
   opacity: 0.4;
 }
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .skill-slider .item {
+    width: calc(100% - 40px);
+    height: auto;
+    min-height: 250px;
+    margin: 20px auto;
+  }
+
+  .skill-slider {
+    padding: 0 20px;
+  }
+
+  .react-multi-carousel-item {
+    padding: 0 10px;
+  }
+}
+
 
 /*** Project Css ***/
 .project {
